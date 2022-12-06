@@ -1,0 +1,21 @@
+type Query {
+    users: [User]
+    pets: [Pet]
+}
+
+type User {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    email: String!
+    budget: Float!
+}
+
+type Pet {
+    id: ID!
+    name: String!
+    description: String!
+    birthDate: String!
+    rating: Int
+    owner: User
+}
